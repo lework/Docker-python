@@ -17,7 +17,7 @@ RUN apk --update -t --no-cache add tzdata curl \
 	gcc \
 	libc-dev \
 	linux-headers \
-	&& pip install -i uwsgi \
+	&& pip install uwsgi \
 	&& apk del --no-network .build-deps
 
 WORKDIR ${WORKSPACE}
